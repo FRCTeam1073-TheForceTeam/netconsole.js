@@ -17,7 +17,7 @@ To run a local version
 
 -	Makes FIRST more accessible
 -	Cross platform. Can run on Windows, Linux, Mac, and Android (and unofficially iOS)
--	Arguably faster at dumping your `printf`s :P node js runs on an event-based architecture, so rather than maintaining a UDP queue, data from the cRio can just be printed to stdout whenever the bound datagram socket sees new data by means of a javascript callback function.
+-	Arguably faster at dumping your `printf`s than the stock version :P node js runs on an event-based architecture, so rather than maintaining a UDP queue, data from the cRio can just be printed to stdout whenever the bound datagram socket sees new data by means of a javascript callback function.
 
 ##Future Work
 
