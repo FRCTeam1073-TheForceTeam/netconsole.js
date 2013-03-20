@@ -11,7 +11,7 @@ var IN = 6666;
 var OUT = 6668;
 
 listener.on("message", function(msg, rinfo){
-	console.log(msg);
+	console.log(msg.toString());
 });
 listener.on("listening", function(){
 	//event to handle the listener being in an idle state
