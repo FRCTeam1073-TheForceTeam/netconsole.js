@@ -1,0 +1,19 @@
+{
+  "author": "Evin Ugur",
+  "version": "0.0.1",
+  "name": "FRCNetConsole",
+  "description": "node implementation of the ni-cRio NetConsole application for use in FIRST Robotics Competition",
+  "keywords": ["FRC", "FIRST Robotics", "NetConsole", "ni-cRio"],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FRCTeam1073-TheForceTeam/netconsole.js.git"
+  },  
+
+  "main": "./netconsole.js",
+  "engines": {
+    "node": ">= v0.4.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
