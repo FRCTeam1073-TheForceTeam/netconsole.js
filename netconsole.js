@@ -3,8 +3,8 @@ NI-cRio NetConsole on node js
 Evin Ugur
 */
 
-var drgram = require("dgram");
-var listener = drgram.createSocket("udp4");
+var dgram = require("dgram");
+var listener = dgram.createSocket("udp4");
 
 //ports cRIO uses for NetConsole
 var IN = 6666;
