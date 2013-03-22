@@ -35,4 +35,9 @@ scanner.on("line", function(cmd){
 		sender.send(buffer , 0, buffer.length, OUT, getIP(TEAM));
 	}
 });
-function getIP (teamnumber) { return "10." + teamnumber.substring(0,2) + "." + teamnumber.substring(2) + ".2";}
+function getIP (teamnumber) {
+	if(teamnumber.length != 4){
+		throw new Error("Team Numbers must  be 4 digits long. If you're < 1000, then add 0s")
+	}
+	return "10." + teamnumber.substring(0,2) + "." + teamnumber.substring(2) + ".2";
+}
