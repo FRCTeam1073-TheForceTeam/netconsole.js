@@ -1,18 +1,20 @@
 /* NI-cRio NetConsole on node js -- Evin Ugur */
-//if you like to interact with the NetConsole, set your team number here and this bool to true
+/*if you'd like to send commands down to the robot by means of NetConsle (ex 'ls'):
+	- Set SEND_DATA to true
+	- Set TEAM to your team number
+*/
 var SEND_DATA = true;
 var TEAM = "1073";
 
 var dgram = require("dgram");
 var readline = require("readline");
 var listener = dgram.createSocket("udp4");
-listener.bind(IN);
 var scanner = readline.createInterface(process.stdin, process.stdout);
 scanner.setPrompt("$ ");
 scanner.prompt();
 
 var sender = dgram.createSocket("udp4");
-sender.bind(OUT);
+
 
 //ports uses for NetConsole - it uses two: one for in and out, probably to avoid a race condition
 var IN = 6666;
@@ -25,6 +27,8 @@ listener.on("listening", function(){
 	//event to handle the listener being in an idle state
 	console.log("You are no longer receiving any data from NetConsole");	//this is just for debugging...	
 });
+listener.bind(IN);
+sender.bind(OUT);
 scanner.on("line", function(cmd){
 	if(SEND_DATA && cmd != ""){
 		var buffer = new Buffer(cmd);
