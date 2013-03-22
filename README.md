@@ -19,6 +19,17 @@ To run a local version
 -	Cross platform. Can run on Windows, Linux, Mac, and Android (and unofficially iOS)
 -	Arguably faster at dumping your `printf`s than the stock version :P node js runs on an event-based architecture, so rather than maintaining a UDP queue, data from the cRio can just be printed to stdout whenever the bound datagram socket sees new data by means of a javascript callback function.
 
+##Sending VxWorks Commands Through NetConsole
+If you'd like to send down data to NetConsole you'd have to enable the feature in the code
+
+- Set SEND_DATA to true
+- Set TEAM to your team number (this is used to generate your robot's IP address)
+
+```
+	var SEND_DATA = true;	//true by default
+	var TEAM = "1073";	//set to your team number
+```
+
 ##Future Work
 
 -	Send down data to the VxWorks OS. Currently we can only stream data from NetConsole.
