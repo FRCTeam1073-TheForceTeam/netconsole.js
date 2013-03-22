@@ -4,7 +4,7 @@
 	- Set TEAM to your team number
 */
 var SEND_DATA = true;
-var TEAM = "1073";
+var TEAM = 1073;
 
 var dgram = require("dgram");
 var readline = require("readline");
@@ -36,8 +36,9 @@ scanner.on("line", function(cmd){
 	}
 });
 function getIP (teamnumber) {
-	if(teamnumber.length != 4){
+	var str = "" + temnumber;
+	if(str.length != 4){
 		throw new Error("Team Numbers must  be 4 digits long. If you're < 1000, then add 0s");
 	}
-	return "10." + teamnumber.substring(0,2) + "." + teamnumber.substring(2) + ".2";
+	return "10." + str.substring(0,2) + "." + str.substring(2) + ".2";
 }
