@@ -1,7 +1,7 @@
 {
   "author": "Evin Ugur",
   "version": "0.0.1",
-  "name": "FRCNetConsole",
+  "name": "frcnetconsole",
   "description": "node implementation of the ni-cRio NetConsole application for use in FIRST Robotics Competition",
   "keywords": ["FRC", "FIRST Robotics", "NetConsole", "ni-cRio"],
 
