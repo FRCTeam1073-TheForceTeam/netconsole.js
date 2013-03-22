@@ -37,7 +37,7 @@ scanner.on("line", function(cmd){
 });
 function getIP (teamnumber) {
 	if(teamnumber.length != 4){
-		throw new Error("Team Numbers must  be 4 digits long. If you're < 1000, then add 0s")
+		throw new Error("Team Numbers must  be 4 digits long. If you're < 1000, then add 0s");
 	}
 	return "10." + teamnumber.substring(0,2) + "." + teamnumber.substring(2) + ".2";
 }
