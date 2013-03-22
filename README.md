@@ -22,8 +22,8 @@ To run a local version
 ##Sending VxWorks Commands Through NetConsole
 If you'd like to send down data to NetConsole you'd have to enable the feature in the code
 
-- Set SEND_DATA to true
-- Set TEAM to your team number (this is used to generate your robot's IP address)
+- Set `SEND_DATA` to true
+- Set `TEAM` to your team number (this is used to generate your robot's IP address)
 
 ```
 	var SEND_DATA = true;	//true by default
