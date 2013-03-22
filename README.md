@@ -27,7 +27,7 @@ If you'd like to send down data to NetConsole you'd have to enable the feature i
 
 ```
 	var SEND_DATA = true;	//true by default
-	var TEAM = "1073";	//set to your team number
+	var TEAM = 1073;	//set to your team number
 ```
 
 ##Future Work
