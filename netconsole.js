@@ -28,15 +28,15 @@ listener.on("listening", function(){
 	console.log("You are no longer receiving any data from NetConsole");	//this is just for debugging...	
 });
 listener.bind(IN);
-sender.bind(OUT);
 scanner.on("line", function(cmd){
 	if(SEND_DATA && cmd != ""){
 		var buffer = new Buffer(cmd);
-		sender.send(buffer , 0, buffer.length, OUT, getIP(TEAM));
+		sender.send(buffer, 0, buffer.length, OUT, getIP(TEAM));
 	}
 });
+
 function getIP (teamnumber) {
-	var str = "" + temnumber;
+	var str = "" + teamnumber;
 	if(str.length != 4){
 		throw new Error("Team Numbers must  be 4 digits long. If you're < 1000, then add 0s");
 	}
