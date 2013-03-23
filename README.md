@@ -32,4 +32,4 @@ If you'd like to send down data to NetConsole you'd have to enable the feature i
 
 ##Future Work
 
--	Send down data to the VxWorks OS. Currently we can only stream data from NetConsole.
+-	We can send down information to the NetConsole ie `ls` but instead of running the command, it just echos back the data we send. This will get fixed soon. Everything else seems to work well though!
