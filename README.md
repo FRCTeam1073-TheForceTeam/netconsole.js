@@ -6,6 +6,7 @@ This is a port of NetConsole for the ni-cRio used in FIRST Robotics Competitions
 To obtain the latest stable build:
 ```
 	npm install frcnetconsole
+	#npm hosting is here: https://npmjs.org/package/frcnetconsole
 ```
 
 To run a local version
