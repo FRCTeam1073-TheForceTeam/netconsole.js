@@ -1,5 +1,5 @@
 #netconsole.js
-This is a port of NetConsole for the ni-cRio used in FIRST Robotics Competitions to node.js. This is cool because it's now super cross platform, and due to the event listeners of node.js.
+This is a port of NetConsole for the ni-cRio used in FIRST Robotics Competitions to node.js. This is cool because it's now super cross platform
 
 ##Usage
 
@@ -36,5 +36,5 @@ http://touro.ligo-la.caltech.edu/~cparames/CDS/vxWorks_commands.html
 
 Here's some stuff I plan to do in the future. Please fork and add your own features if you see fit, or you can submit something that you'd like to be added by means of email or whatever.
 
-###VxWorks Scripts
-VxWorks has no support for scripting natively. I plan on adding in a feature to read a list of VxWorks commands from the file system, and then have a special command in `netconsole.js` to read the file line-by-line and UDP down the data. It'd be simple, but easy enough to do...
+###Running VxWorks Scritps
+VxWorks has support for scripting, however most FRC development tries to tends to stay away from its shell. To make life easier, I'll be soon supporting the ability to run scritps off of the host by means of sending down data line by line as if they were being typed into the shell. While this obviously isn't the most mission safe way of autoamting tasks, it'll useful and (to me) a lot easier for some of the smaller things that might need to be done on the cRio.
