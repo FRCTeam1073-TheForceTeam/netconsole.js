@@ -1,5 +1,5 @@
 #netconsole.js
-This is a port of NetConsole for the ni-cRio used in FIRST Robotics Competitions to node.js. This is cool because it's now super cross platform
+This is a port of NetConsole for the ni-cRio used in FIRST Robotics Competitions to node.js. 
 
 ##Usage
 
