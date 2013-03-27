@@ -8,7 +8,7 @@ var dgram = require("dgram");
 var readline = require("readline");
 var listener = dgram.createSocket("udp4");
 var scanner = readline.createInterface(process.stdin, process.stdout);
-scanner.setPrompt("$ ");
+scanner.setPrompt("->"); //to emulate a VxWorks prompt
 scanner.prompt();
 var sender = dgram.createSocket("udp4");
 
