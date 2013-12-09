@@ -25,7 +25,7 @@ listener.bind(NETCONSOLE_PORT_IN);
 
 //Client code to send data to VxWorks
 scanner.on("line", function(cmd){
-	if(cmd != ""){
+	if(cmd !== ""){
 		var buffer = new Buffer(cmd + "\r\n");	//thanks to github.com/gluxon for pointing out the need for rollback and carriage return chars on ChiefDelhi :) 
 		sender.send(buffer, 0, buffer.length, NETCONSOLE_PORT_OUT, getIP(TEAM));
 	}
