@@ -4,13 +4,13 @@ This is a port of NetConsole for the ni-cRio used in FIRST Robotics Competitions
 ##Usage
 
 To obtain the latest stable build:
-```
+```bash
 	npm install frcnetconsole
 	#npm hosting is here: https://npmjs.org/package/frcnetconsole
 ```
 
 To run a local version
-```
+```bash
 	node netconsole.js
 ```
 
@@ -24,7 +24,7 @@ To run a local version
 
 - Set `TEAM` to your team number (this is used to generate your robot's IP address) 
 
-```
+```javascript
 	var TEAM = 1073;	//set to your team number
 ```
 
